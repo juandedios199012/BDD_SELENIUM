@@ -1,0 +1,117 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3303702329,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Search.startUp()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Búsqueda  con resultados",
+        "description": "",
+        "id": "funcionalidad-de-búsqueda-de-productos;búsqueda--con-resultados",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5918288152,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Se carga la página de búsqueda",
+            "match": {
+              "location": "Search.seCargaLaPáginaDeBúsqueda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1241629207,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Buscamos el término \"skirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "skirt",
+                  "offset": 21
+                }
+              ],
+              "location": "Search.buscamosElTérmino(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 135408937,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Clic en List",
+            "match": {
+              "location": "Search.clicEnList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 124884373,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Clic en el boton agregar",
+            "match": {
+              "location": "Search.clicEnElBotonAgregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1644911196,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Clic en el boton procesar",
+            "match": {
+              "location": "Search.clicEnElBotonProcesar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90911967,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Mostrar mensaje \"1 Product\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1 Product",
+                  "offset": 17
+                }
+              ],
+              "location": "Search.mostrarMensaje(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Funcionalidad de búsqueda de productos",
+    "description": "",
+    "id": "funcionalidad-de-búsqueda-de-productos",
+    "keyword": "Feature",
+    "uri": "Search.feature"
+  }
+]

@@ -50,7 +50,8 @@ public class Search {
     @Then("^Mostrar mensaje \"([^\"]*)\"$")
     public void mostrarMensaje(String mensajeproductocarrito) throws Throwable {
        CarritoPage carritoPage = new CarritoPage(driver);
-       Assert.assertEquals(carritoPage.getMensajeAgregarProductoCarrito().trim(), mensajeproductocarrito , "Error, no se agrego al carrito");
+       Assert.assertEquals(carritoPage.getMensajeAgregarProductoCarrito().trim(), mensajeproductocarrito ,
+               "Error, no se agrego al carrito");
     }
 
     @Before
